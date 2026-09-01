@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 
 
@@ -23,7 +23,7 @@ export default function Eventos (){
 
        
 
-        <div className='Paggina-Eventos  pagina '>
+        <div className='Pagina-Eventos  pagina '>
             <div className="container">
 
         <h2>Entendendo eventos</h2>
