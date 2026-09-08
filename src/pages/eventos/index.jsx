@@ -12,8 +12,14 @@ export default function Eventos (){
         }
 
         function AlterouB(e){
-        let novovalor = e.target.checked ;//  booleano 
+        let novovalor = e.target.checked ; //  booleano 
             alert("Alterou o Valor para : " + novovalor);
+        }
+
+        function alteroucheck (e){
+            let novovalor = e.target.checked;
+            alert('Alterou o Valor do Checkbox/Radio para' +' '+ novovalor);
+           
         }
 
 
@@ -41,16 +47,21 @@ export default function Eventos (){
         />
 
         <select onChange={Alterou}>
+
           <option >Selecione</option>
-          <option  >Opção 1</option>
+          <option >Opção 1</option>
           <option>Opção 2</option>
           <option>Opção 3</option>
+
         </select>
 
         <div className="opcoes">
+            <h2>Check</h2>
+
+          
 
           <label>
-            <input type="radio" name="opcao" />
+            <input  onChange={alteroucheck}type="radio" name="opcao" />
             Opção 1
           </label>
 
@@ -60,16 +71,20 @@ export default function Eventos (){
           </label>
 
           <label>
-            <input type="radio" name="opcao" />
-            Opção 3
-          </label>
-
-          <label>
-            <input type="radio" name="opcao" />
+            <input  type="checkbox" name="opcao" />
             Opção 4
           </label>
 
+          <label>
+            <input  onChange={alteroucheck}type="checkbox" name="opcao" />
+            Opção 5
+          </label>
+
         </div>
+        <textarea onChange={Alterou}   placeholder='Escreva aqui'>
+
+
+        </textarea>
 
         <button>Clique aqui</button>
 
