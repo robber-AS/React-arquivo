@@ -6,19 +6,17 @@ import './index.scss';
 
 export default function Eventos (){
 
-     function Alterou(e){
-        let novovalor = e.target.value ;
-            alert("Alterou o Valor para : " + novovalor);
-        }
+      function Alterou(e){
+        let novovalor = e.target.value;
+        alert("Você alterou o valor do input" + " " + novovalor );
+        
+      }
 
-        function AlterouB(e){
-        let novovalor = e.target.checked ;//  booleano 
-            alert("Alterou o Valor para : " + novovalor);
-        }
-
-
-
-
+      function Passou(){
+        alert("Passou o Mouse Sobre ");
+      }
+        
+    
     return(
 
        
@@ -28,19 +26,17 @@ export default function Eventos (){
 
         <h2>Entendendo eventos</h2>
 
-        <p >
+        <p onMouseMove={Passou}  >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Ducimus sed ad adipisci architecto fuga nam ut saepe
           necessitatibus ab nostrum omnis, repellat fugit alias
           praesentium expedita minus culpa cupiditate numquam?
         </p>
 
-        <input onChange={Alterou}
-          type="text"
-          placeholder="Digite aqui alguma coisa"
+        <input  onChange={Alterou}  type="text"   placeholder="Digite aqui alguma coisa"
         />
 
-        <select onChange={Alterou}>
+        <select  onChange={Alterou} >
           <option >Selecione</option>
           <option  >Opção 1</option>
           <option>Opção 2</option>
@@ -71,7 +67,7 @@ export default function Eventos (){
 
         </div>
 
-        <button>Clique aqui</button>
+        <button >Clique aqui</button>
 
       </div>
 
