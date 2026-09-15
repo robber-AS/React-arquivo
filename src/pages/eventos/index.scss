@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  
   align-items: center;
 }
 
@@ -45,7 +46,7 @@ body {
 }
 
 .container input[type="text"],
-.container select {
+.container select ,textarea{
   display: block;
 
   width: 177px;

@@ -1,12 +1,33 @@
 
 .Pagina-Contador  {
  background-color: rgb(114, 134, 250);
+ align-items: center;
+ 
  button{
     width: 50px;
     margin-left: 10px;
     background-color: rgb(255, 166, 0);
     border-radius: 2px;
 
+
     
+  }
+  button:hover{
+    width: 50px;
+    margin-left: 10px;
+    background-color: rgb(51, 255, 0);
+    border-radius: 2px;
+    
+
+    
+  }
+  section{
+  
+   
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
