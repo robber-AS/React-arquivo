@@ -13,6 +13,7 @@ import './pages/contador/index.scss';
 import CadastroFuncionario from './pages/usuario';
 import './pages/usuario/index.scss';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Rob from './pages/rob';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,8 @@ root.render(
          <Route path='/varestado' element={<Varestado/>}/>
          <Route path='/contador' element={<Contador/>}/>
          <Route path='/usuario' element={<CadastroFuncionario/>}/>
+         <Route path='/rob' element={<Rob/>}/>
+         
 
       </Routes>
     </BrowserRouter>

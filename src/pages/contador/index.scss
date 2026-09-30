@@ -1,4 +1,29 @@
 
+
+
+.cont{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: seashell;
+  width:  100px;
+
+}
+
+
+
+
+
+
+
+
+.contador{
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+
+}
 .Pagina-Contador  {
  background-color: rgb(114, 134, 250);
  align-items: center;
@@ -22,12 +47,12 @@
     
   }
   section{
-  
-   
+     
     height: 50px;
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 5px 5px  10px rgb(194, 93, 93);
   }
 }

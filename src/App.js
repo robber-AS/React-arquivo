@@ -11,6 +11,7 @@ function App() {
       <Link to="/usuario"><h2> ir Para Cadastro de Funcionário</h2> </Link>
       <Link to="/varestado"><h2> ir Para Variável de Estado</h2> </Link>  
       <Link to="/contador"><h2> ir Para Contador</h2> </Link>
+      <Link to ='rob'>  <h2>ir para rob</h2> </Link>
 
     </div>
    

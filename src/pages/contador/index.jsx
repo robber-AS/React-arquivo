@@ -1,27 +1,29 @@
+import { useState } from "react";
 import "./index.scss";
 
 export default function Contador() {
-  let Contador = 0;
+  const [contador, setcontador] = useState(0);
 
-  function aumentar() {
-    Contador = Contador + 1;
-
-    alert("Você aumentou o valor do contador para: " + Contador);
+  function mais() {
+    if (contador < 20) {
+      setcontador(contador + 1);
+    }
   }
 
-  function diminuir() {
-    Contador = Contador - 1;
-
-    alert("Você diminuiu o valor do contador para: " + Contador);
+  function menos() {
+    if (contador > 0) {
+      setcontador(contador - 1);
+    }
   }
+
   return (
-    <div className="Pagina-Contador  pagina ">
+    <div className="contador">
       <h1>Contador</h1>
-      <section className="contador">
-        
-        <button onClick={aumentar}>+</button>
-          {Contador}
-        <button onClick={diminuir}>-</button>
+
+      <section className="cont">
+        <button onClick={menos}>-</button>
+        <h2>{contador}</h2>
+        <button onClick={mais}>+</button>
       </section>
     </div>
   );
