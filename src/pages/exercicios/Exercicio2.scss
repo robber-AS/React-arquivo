@@ -1,0 +1,83 @@
+.exercicio2 {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: #218838;
+      }
+    }
+  }
+
+  .lista-tarefas {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+
+      &.concluida span {
+        text-decoration: line-through;
+        color: #888;
+      }
+
+      span {
+        cursor: pointer;
+        flex: 1;
+      }
+
+      button {
+        padding: 5px 10px;
+        background: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+          background: #c82333;
+        }
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    color: #666;
+    margin-top: 15px;
+  }
+}

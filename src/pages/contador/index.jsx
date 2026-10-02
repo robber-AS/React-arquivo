@@ -3,6 +3,8 @@ import "./index.scss";
 export default function Contador() {
   let Contador = 0;
 
+  
+
   function aumentar() {
     Contador = Contador + 1;
 
