@@ -74,30 +74,13 @@ export default function Varestado() {
           <option>Java</option>
         </select>
 
-        <br></br>
-        <br></br>
-
-        <label>Programar e bom ?  {varestado3 ? 'sim' : 'nao'}  </label>
-
-
-
-        <input onChange={Alterarcheck} type='checkbox' checked={varestado3} />
-
-
-
-
-        <br></br>
-        <hr></hr>
-
-
-        <h2>{tituloS5}</h2>
-
-
-        <input type="text" onChange={Alterardescricao} />
-
-        <button onClick={Alterartitulos5}>Enviar</button>
-
-
+                <br></br>
+                <br></br>
+                
+                <h2>{}</h2>
+                
+                  <input type='checkbox' checked={varestado3} é bom/> 
+                 
 
 
       </div>
