@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./index.scss";
 
 export default function Contador() {
-  let Contador = 0;
+  const [contador, setcontador] = useState(0);
 
   function mais() {
     if (contador < 20) {

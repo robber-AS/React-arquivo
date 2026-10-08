@@ -1,0 +1,68 @@
+.ingressos {
+  min-height: 100vh;
+  padding: 35px 20px;
+  background-color: #f0f2f7;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+
+  .card {
+    max-width: 920px;
+    padding: 35px 38px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  h1 {
+    margin: 0 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .linha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    label {
+      width: 185px;
+      padding-right: 18px;
+      text-align: right;
+      font-size: 16px;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      width: 185px;
+      height: 52px;
+      padding: 0 14px;
+      font-size: 16px;
+      color: #555;
+      border: 2px solid #e8e8e8;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+      margin: 0;
+    }
+
+    button {
+      width: 185px;
+      height: 54px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #0d7bff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+
+  .total {
+    margin: 25px 0 0;
+    font-size: 16px;
+  }
+}

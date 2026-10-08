@@ -11,7 +11,7 @@ import CadastroFuncionario from "./pages/usuario";
 import "./pages/usuario/index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Ingressos from "./pages/ingressos";
 
 
 
@@ -25,6 +25,7 @@ export default function Navegacao() {
         <Route path="/varestado" element={<Varestado />} />
         <Route path="/contador" element={<Contador />} />
         <Route path="/usuario" element={<CadastroFuncionario />} />
+        <Route path="/ingressos" element={<Ingressos />} />
       </Routes>
     </BrowserRouter>
   );

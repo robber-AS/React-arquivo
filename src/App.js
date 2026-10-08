@@ -11,11 +11,15 @@ function App() {
       <Link to="/usuario"><h2> ir Para Cadastro de Funcionário</h2> </Link>
       <Link to="/varestado"><h2> ir Para Variável de Estado</h2> </Link>  
       <Link to="/contador"><h2> ir Para Contador</h2> </Link>
-
+      <Link to="/ex01"><h2> ir Para Exercício 1</h2> </Link>
+      <Link to="/ingressos"><h2> ir Para Ingressos</h2> </Link>
     </div>
-   
-       
   );
 }
+
+  
+   
+       
+  
 
 export default App;

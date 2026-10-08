@@ -12,6 +12,7 @@ import Contador from './pages/contador';
 import './pages/contador/index.scss';
 import CadastroFuncionario from './pages/usuario';
 import './pages/usuario/index.scss';
+import Ingressos from "./pages/ingressos";
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
@@ -26,6 +27,7 @@ root.render(
          <Route path='/varestado' element={<Varestado/>}/>
          <Route path='/contador' element={<Contador/>}/>
          <Route path='/usuario' element={<CadastroFuncionario/>}/>
+         <Route path='/ingressos' element={<Ingressos/>}/>
 
       </Routes>
     </BrowserRouter>
