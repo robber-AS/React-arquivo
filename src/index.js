@@ -13,6 +13,7 @@ import './pages/contador/index.scss';
 import CadastroFuncionario from './pages/usuario';
 import './pages/usuario/index.scss';
 import Ingressos from "./pages/ingressos";
+import Evento1 from './pages/ex01';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
@@ -28,10 +29,12 @@ root.render(
          <Route path='/contador' element={<Contador/>}/>
          <Route path='/usuario' element={<CadastroFuncionario/>}/>
          <Route path='/ingressos' element={<Ingressos/>}/>
+         <Route path='/ex01' element={<Evento1/>}/>
 
       </Routes>
     </BrowserRouter>
   
   </React.StrictMode>
+  
 );
 

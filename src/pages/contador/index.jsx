@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./index.scss";
 
+
+
 export default function Contador() {
   const [contador, setcontador] = useState(0);
 
@@ -17,8 +19,13 @@ export default function Contador() {
   }
 
   return (
+      
+    
     <div className="contador">
+
+      
       <h1>Contador</h1>
+  
 
       <section className="cont">
         <button onClick={menos}>-</button>
