@@ -1,16 +1,22 @@
 import { useState } from "react";
 import "./index.scss";
 
+import Cabecalho from "../../componentes/cabecalho";
+
+
+
+
+
 const PRECO_INGRESSO = 30;
 
 export default function Ingressos() {
   const [qtd, setQtd] = useState(1);
   const [meia, setMeia] = useState(false);
   const [cupom, setCupom] = useState("");
-  const [total, setTotal] = useState(null);
+  const [total, setTotal] = useState('');
   
   function rob (){
-    let valor = Number(qtd) * PRECO_INGRESSO;
+    let valor = (qtd) * PRECO_INGRESSO;
 
     if (meia){
       valor = valor / 2;
@@ -26,6 +32,9 @@ export default function Ingressos() {
   
   return (
     <div className="ingressos">
+      <Cabecalho titulo="Venda de Ingressos" />
+     
+      
       <div className="card">
         <h1>Venda de Ingressos</h1>
 

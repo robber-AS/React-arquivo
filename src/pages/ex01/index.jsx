@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./index.scss"
 
+import '../../componentes/cabecalho/index.jsx';
+import Cabecalho from "../../componentes/cabecalho/index.jsx";
+
+
+
 export default function Evento1() {
 
     const [titulo1, settitulo1] = useState("")
@@ -64,7 +69,7 @@ export default function Evento1() {
     }
 
     function somar() {
-        let soma = Number(num1) + Number(num2)
+        let soma = (num1) + (num2)
         setresp(soma);
 
     }
@@ -77,7 +82,10 @@ export default function Evento1() {
 
     return (
 
-        <div className="ex01"  style={{backgroundColor:corFundo}}>
+        <div className="ex01"  >
+            <Cabecalho />
+          
+            
             <section className="section">
                 <h2>A cor selecionada e {corFundo}</h2>
                 <input type="color" value={corFundo} onChange={alterarCorFundo}/>

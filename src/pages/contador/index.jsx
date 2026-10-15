@@ -19,9 +19,12 @@ export default function Contador() {
   }
 
   return (
+      
+    
     <div className="contador">
       <Cabecalho/>
       <h1>Contador</h1>
+  
 
       <section className="cont">
         <button onClick={menos}>-</button>
