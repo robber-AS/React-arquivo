@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./index.scss";
 
-
+import Cabecalho from "../../componentes/cabecalho";
 
 export default function Contador() {
   const [contador, setcontador] = useState(0);
@@ -22,8 +22,7 @@ export default function Contador() {
       
     
     <div className="contador">
-
-      
+      <Cabecalho/>
       <h1>Contador</h1>
   
 
