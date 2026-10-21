@@ -82,11 +82,11 @@ export default function Evento1() {
 
     return (
 
-        <div className="ex01"  >
+        <div className="ex01"   >
             <Cabecalho />
           
             
-            <section className="section">
+            <section className="section" >
                 <h2>A cor selecionada e {corFundo}</h2>
                 <input type="color" value={corFundo} onChange={alterarCorFundo}/>
             </section>

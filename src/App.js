@@ -13,6 +13,7 @@ function App() {
       <Link to="/contador"><h2> ir Para Contador</h2> </Link>
       <Link to="/ex01"><h2> ir Para Exercício 1</h2> </Link>
       <Link to="/ingressos"><h2> ir Para Ingressos</h2> </Link>
+      <Link to="/chamadaAPI"><h2> ir Para Chamada API</h2> </Link>
     </div>
   );
 }
