@@ -14,8 +14,12 @@ import CadastroFuncionario from './pages/usuario';
 import './pages/usuario/index.scss';
 import Ingressos from "./pages/ingressos";
 import Evento1 from './pages/ex01';
+<<<<<<< HEAD
 import ChamadaApi from './pages/ChamadaApi';
 import Login from './pages/login';
+=======
+import ChamadaAPI from './pages/chamadaAPI';
+>>>>>>> bc137edc6c814e65bfb6769536381bc60d1522b8
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
@@ -32,8 +36,12 @@ root.render(
          <Route path='/usuario' element={<CadastroFuncionario/>}/>
          <Route path='/ingressos' element={<Ingressos/>}/>
          <Route path='/ex01' element={<Evento1/>}/>
+<<<<<<< HEAD
          <Route path='/chamadaapi' element={<ChamadaApi/>}/>
          <Route path='/login' element={<Login/>}/>
+=======
+         <Route path='/chamadaAPI' element={<ChamadaAPI/>}/>
+>>>>>>> bc137edc6c814e65bfb6769536381bc60d1522b8
 
       </Routes>
     </BrowserRouter>
