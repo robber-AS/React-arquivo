@@ -7,32 +7,33 @@ import Cabecalho from "../../componentes/cabecalho";
 
 
 
-const PRECO_INGRESSO = 30;
+
 
 export default function Ingressos() {
   const [qtd, setQtd] = useState(1);
+  const PRECO_INGRESSO = 30;
   const [meia, setMeia] = useState(false);
   const [cupom, setCupom] = useState("");
   const [total, setTotal] = useState('');
   
   function rob (){
-    let valor = (qtd) * PRECO_INGRESSO;
+      let valor = PRECO_INGRESSO * qtd;
 
-    if (meia){
-      valor = valor / 2;
+      if (meia){
+        valor = valor /2;
 
-    }
+      }
+      if (cupom.toUpperCase()== "QUERO50"){
+        valor = valor * 0.5
+      }
 
-    if (cupom.toUpperCase() == "QUERO50"){
-      valor = valor * 0.5
-    }
 
-    setTotal(valor);
+      setTotal(valor)
   }
   
   return (
     <div className="ingressos">
-      <Cabecalho titulo="Venda de Ingressos" />
+      <Cabecalho titulo="Venda de Ingressos" cor="#39e695" corTexto="white" />
      
       
       <div className="card">
@@ -41,14 +42,14 @@ export default function Ingressos() {
         <div className="linha">
           <label>Quantidade:</label>
           <input
-            type="number"  min="0"  value={qtd}    onChange={(e) => setQtd(e.target.value)}
+            type="number"  min="0"  value={qtd}    onChange={(e)=>setQtd(e.target.value)}
           />
         </div>
 
         <div className="linha">
           <label>Meia Entrada:</label>
 
-          <input type="checkbox"  checked={meia} onChange={(e)=>setMeia(e.target.checked)}   />
+          <input type="checkbox"  checked={meia}    onChange={(e)=>setMeia(e.target.checked)}/>
         </div>
 
         <div className="linha">

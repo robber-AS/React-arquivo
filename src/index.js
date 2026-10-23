@@ -14,6 +14,8 @@ import CadastroFuncionario from './pages/usuario';
 import './pages/usuario/index.scss';
 import Ingressos from "./pages/ingressos";
 import Evento1 from './pages/ex01';
+import ChamadaApi from './pages/ChamadaApi';
+import Login from './pages/login';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
@@ -30,6 +32,8 @@ root.render(
          <Route path='/usuario' element={<CadastroFuncionario/>}/>
          <Route path='/ingressos' element={<Ingressos/>}/>
          <Route path='/ex01' element={<Evento1/>}/>
+         <Route path='/chamadaapi' element={<ChamadaApi/>}/>
+         <Route path='/login' element={<Login/>}/>
 
       </Routes>
     </BrowserRouter>

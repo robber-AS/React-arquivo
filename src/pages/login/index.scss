@@ -1,0 +1,65 @@
+.login {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+
+  .card {
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      color: #3b6fe6;
+    }
+
+    .linha {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      label {
+        font-weight: bold;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+      }
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #3b6fe6;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #2d58c0;
+      }
+    }
+
+    .dados {
+      padding: 12px;
+      background-color: #e8f0fe;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+
+    .erro {
+      color: #d93025;
+      text-align: center;
+    }
+  }
+}
